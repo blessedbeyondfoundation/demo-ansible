@@ -3,9 +3,7 @@ on:
     branches: [ "main" ]
 jobs:
   ansible_demo:
-    name: 'main'
-    runs-on: ubuntu-latest
-    environment: production
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - name: Run Ansible Playbook
