@@ -3,7 +3,7 @@ on:
     branches: [ "main" ]
 jobs:
   ansible_demo:
-    name: 'Terraform'
+    name: 'main'
     runs-on: ubuntu-latest
     environment: production
     steps:
