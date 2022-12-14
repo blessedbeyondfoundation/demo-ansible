@@ -1,0 +1,12 @@
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  ansible_demo:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Ansible Playbook
+        run: ansible-playbook create_rg.yaml
