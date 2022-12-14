@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Ansible Playbook
-        run: ansible-playbook create_rg.yaml
+        run: ansible-playbook create_rg.yml
